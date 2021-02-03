@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mukemmel sayi/title>
+</head>
+<body>
+    <input type="number" id="txtSayi" />
+	<input type="button" id="btnHesap" value="HESAPLA"><br><br>
+
+        
+                    
+<script>
+ 
+    var btn=document.getElementById("btnHesap");
+    btn.onclick=function(){
+        var i,j;
+        var toplam=0;
+        var sayi=Number(document.getElementById("txtSayi").value);
+        for(i=1;i<sayi;i++)
+         {
+             if (sayi%i==0)
+             {
+                toplam=toplam+i;	
+             }
+         }
+             if (sayi==toplam)
+             {
+                
+                window.alert(sayi+"sayi mukemmel sayidir.");
+             }
+             else
+             {
+                window.alert("sayi mukemmel sayi degildir.");
+             }
+         }
+</script>
+</body>
+</html>

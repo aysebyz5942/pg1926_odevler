@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> asal sayilar</title>
+    </head>
+
+    <body>
+        
+        <script type="text/javascript" language="javascript">
+            var sayi,i,x=0; 
+           sayi=parseInt(prompt("Bir sayı giriniz: ")); //pop up menuden sayi gir diyor
+           
+           for(i=2; i<=sayi/2; i++)
+           { 
+               if(sayi%i==0)
+                   {   
+                       x++; 
+                   }
+           } 
+           if(x==0) 
+           { 
+               document.write("Girdiğiniz sayı asaldır."); 
+           }
+           else 	
+           {	
+               document.write("Girdiğiniz sayı asal değildir.");  	
+           } 			
+       </script>
+    </body>
+
+
+</html>
